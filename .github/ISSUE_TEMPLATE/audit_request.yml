@@ -1,0 +1,88 @@
+name: Request Repository Intelligence Audit
+description: Request a founding-beta Repository Intelligence Audit.
+title: "[Audit Request] "
+labels: ["audit-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not upload private source code, credentials, customer information, or secrets into this public issue. Repository access, if needed, will be arranged privately after request review.
+  - type: input
+    id: github_username_name
+    attributes:
+      label: GitHub username/name
+      placeholder: "@your-handle or name"
+    validations:
+      required: true
+  - type: textarea
+    id: project_stack
+    attributes:
+      label: Project stack
+      description: Languages, frameworks, package managers, runtime, and deployment style if relevant.
+    validations:
+      required: true
+  - type: dropdown
+    id: operating_system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: repository_size
+    attributes:
+      label: Approximate repository size
+      options:
+        - under 100 files
+        - 100-500 files
+        - 500-2,000 files
+        - 2,000+ files
+        - not sure
+    validations:
+      required: true
+  - type: checkboxes
+    id: ai_coding_workflow
+    attributes:
+      label: Coding-agent workflow
+      options:
+        - label: Codex
+        - label: GitHub Copilot
+        - label: Claude
+        - label: Cursor
+        - label: Other
+  - type: textarea
+    id: main_pain_points
+    attributes:
+      label: Main pain points
+      description: Describe repository navigation, architecture, retrieval, testing, or agent-context problems at a high level.
+    validations:
+      required: true
+  - type: checkboxes
+    id: focus_areas
+    attributes:
+      label: Areas you want reviewed
+      options:
+        - label: architecture
+        - label: dependency impact
+        - label: code-risk observations
+        - label: testing gaps
+        - label: AI-development readiness
+        - label: retrieval quality
+        - label: Repository Memory
+        - label: other
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional public-safe context
+      description: Share only public-safe, high-level details. Private repository access, if needed, will be arranged separately after review.
+  - type: checkboxes
+    id: privacy_acknowledgement
+    attributes:
+      label: Privacy acknowledgement
+      options:
+        - label: I will not upload private source code, credentials, customer information, or secrets into this public issue.
+          required: true
