@@ -756,6 +756,61 @@ details p {
   border-radius: var(--radius);
 }
 
+.callout-band,
+.pilot-card,
+.warning {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 94%, white), var(--surface));
+}
+
+.callout-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.language-band {
+  margin-top: 1rem;
+}
+
+.language-band p:last-child {
+  margin-bottom: 0;
+}
+
+.flow-list-six {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.warning,
+.pilot-card {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.warning {
+  border-left: 4px solid var(--accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.pilot-card ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+:not(pre) > code {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface-muted);
+  color: var(--ink);
+  padding: 0.08em 0.3em;
+}
+
 .faq-list {
   display: grid;
   gap: 0.75rem;
@@ -854,7 +909,8 @@ details p {
   }
 
   .hero-actions,
-  .beta-band {
+  .beta-band,
+  .callout-band {
     align-items: stretch;
     flex-direction: column;
   }

@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Request beta access
-    url: https://github.com/raazlehra/repomind-site/issues/new?template=beta_access.yml
-    about: Use this form to request access to the RepoMind private beta.
-  - name: Request setup help
-    url: https://github.com/raazlehra/repomind-site/issues/new?template=setup_request.yml
-    about: Use this form to request founding-beta setup help.
-  - name: Request repository intelligence audit
-    url: https://github.com/raazlehra/repomind-site/issues/new?template=audit_request.yml
-    about: Use this form to request a repository intelligence audit.
+  - name: RepoMind product issues and feedback
+    url: https://github.com/raazlehra/Repomind/issues
+    about: Use the product repository for public, sanitized technical issues and feedback.
+  - name: Report a security vulnerability privately
+    url: https://github.com/raazlehra/Repomind/security/advisories/new
+    about: Do not disclose vulnerabilities, secrets, or private repository data in a public issue.
+  - name: Maintainer profile and contact routes
+    url: https://github.com/raazlehra
+    about: Use the maintainer's existing profile routes for private commercial or design-partner contact.
