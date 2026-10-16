@@ -48,7 +48,6 @@ html {
 }
 
 body {
-  min-width: 320px;
   margin: 0;
   background:
     radial-gradient(circle at 18% 8%, color-mix(in srgb, var(--accent) 16%, transparent) 0 18rem, transparent 32rem),
@@ -621,8 +620,10 @@ details p {
 }
 
 .demo-media {
+  width: 100%;
+  max-width: 960px;
   overflow: hidden;
-  margin: 0;
+  margin: 0 auto;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -639,12 +640,17 @@ details p {
 
 .demo-media figcaption {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.1rem;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.demo-media figcaption > span {
+  min-width: 0;
 }
 
 .demo-links {
