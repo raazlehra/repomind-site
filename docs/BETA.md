@@ -1,6 +1,6 @@
 # RepoMind Public Beta
 
-RepoMind is an Apache-2.0 open-source public beta. The current release is [`v2.0.0b11`](https://github.com/raazlehra/Repomind/releases/tag/v2.0.0b11), a prerelease hardening beta.
+RepoMind is an Apache-2.0 open-source public beta. The current release is [`v2.0.0b12`](https://github.com/raazlehra/Repomind/releases/tag/v2.0.0b12), a prerelease hardening beta.
 
 RepoMind Free is available directly from the public GitHub Release. Download the release wheel and follow the canonical [installation guide](https://github.com/raazlehra/Repomind/blob/main/docs/INSTALLATION.md).
 
